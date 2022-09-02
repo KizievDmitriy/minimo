@@ -1,0 +1,51 @@
+.card-img{
+   object-fit: cover;
+
+    // margin-bottom: 100px;
+}
+.card-label{
+    @media screen and (min-width: 768px) {
+        padding: 0 80px;
+    }
+}
+.card-teg{
+    font-family: $secondary-font;
+    @include font(300, 14, 24);
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 30px;
+}
+.card-header{
+    @include font(500, 30, 24);
+    margin-bottom: 30px;
+}
+.card-description{
+    margin-bottom: 50px;
+}
+.card-btn{
+    margin-bottom: 0;
+    transition: all 350ms ease-in-out;
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+
+.swiper {
+    margin-bottom: 30px;
+    max-width: 290px;
+    max-height: 138px;
+    @media screen and(min-width: 480px) {
+            max-width: 450px;
+            max-height: 201px;
+        }
+
+    @media screen and(min-width: 768px) {
+        max-width: 738px;
+        max-height: 339px;
+    }
+    @media screen and(min-width: 1200px) {
+    max-width: 920px;
+    max-height: 440px;
+    margin-bottom: 100px;
+    }
+}
