@@ -1,0 +1,46 @@
+nav.navrr {
+    background-color: #272727;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    padding: 100px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &.show {
+        transform: translateX(0px);
+        ul.main {
+            li {
+                transform: translateX(0px);
+                opacity: 1;
+
+                @for $i from 1 to 10 {
+                    &:nth-child(#{$i}) {
+                        transition-delay: $i * 200ms;
+                    }
+                }
+            }
+        }
+
+    }
+
+    ul.main {
+        list-style-type: none;
+
+        li {
+            margin-bottom: 20px;
+            transform: translateX(40px);
+            opacity: 0;
+            transition: all .3s ease;
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+

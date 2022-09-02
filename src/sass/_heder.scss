@@ -1,0 +1,109 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 24px;
+    width: 125px;
+    background-image: url('../images/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-list{
+    display: flex;
+    @media screen and (max-width: 479px) {
+            display: none;
+        }
+}
+.header-item{
+    @media screen and (min-width: 425px) {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    @media screen and (min-width: 768px){
+        &:not(:last-child){
+        margin-right: 100px;
+    }
+    }   
+}
+.header-link{
+    @include font(400, 14, 24);
+    text-transform: uppercase;
+    transition: all 350ms ease-in-out;
+    &:hover, &:focus{
+        color: $accent-color;
+    }
+}
+.navbar__btn {
+    position: fixed;
+    z-index: 45;
+    top: 42px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+}
+
+.burger {
+    &>div {
+        width: 25px;
+        height: 4px;
+        border-radius: 4px;
+        background: #272727;
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 25px;
+            height: 4px;
+            background: #272727;
+            border-radius: 4px;
+        }
+        &::before {
+            margin-top: -10px;
+        }
+
+        &::after {
+            margin-top: 10px;
+        }
+    }
+}
+.burger1 {
+    transition: all 0.7s;
+    transition-timing-function: cubic-bezier(0.68, -0.35, 0.265, 1.35);
+
+    &>div {
+        transition: all 0.1s 0.3s;
+
+        &::before,
+        &::after {
+            transition: all 0.3s 0.2s;
+        }
+    }
+
+    &.toggled {
+        transform: rotate(180deg);
+
+        >div::before {
+            transform: rotate(45deg) translate(6px, 8px);
+            background-color: #ececec;
+        }
+        >div {
+            background: transparent;
+        }
+        >div::after {
+            transform: rotate(-45deg) translate(6px, -8px);
+            background-color: #ececec;
+        }
+    }
+}
