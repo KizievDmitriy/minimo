@@ -4,8 +4,3 @@
     line-height: calc($lh / $fs);
 }
 
-@mixin displayFlex($jc: center, $ai: center) {
-    display: flex;
-    justify-content: $jc;
-    align-items: $ai;
-}
