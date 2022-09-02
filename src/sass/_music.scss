@@ -1,0 +1,22 @@
+.music{
+    text-align: center;
+}
+.music-list{
+    @media screen and(min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 60px;
+        }
+}
+.loadMoreButton{
+    color: $primary-color;
+    font-size: 20px;
+    padding: 22px 34px;
+    border: 1px solid $primary-color;
+    margin-bottom: 100px;
+    transition: all 350ms ease-in-out;
+    &:hover, &:focus{
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}

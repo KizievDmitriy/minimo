@@ -1,0 +1,33 @@
+.footer-container{
+padding-top: 40px;
+padding-bottom: 40px;
+background-color: $secondary-bgColor;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    @media screen and(min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+}
+.footer-list{
+    display: flex;
+    &>span{
+        margin-right: 18px;
+    } 
+}
+.footer-item{
+    &:not(:first-child){
+        margin-left: 18px;
+    }
+}
+.footer-svg{
+    fill: $primary-color;
+    transition: all 350ms ease-in-out;
+    &:hover{
+        fill: $accent-color;
+    }
+}

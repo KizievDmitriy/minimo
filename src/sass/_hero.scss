@@ -1,10 +1,11 @@
 .card-img{
    object-fit: cover;
-
-    // margin-bottom: 100px;
 }
 .card-label{
     @media screen and (min-width: 768px) {
+            padding: 0 30px;
+        }
+    @media screen and (min-width: 1200px) {
         padding: 0 80px;
     }
 }
@@ -16,7 +17,10 @@
     margin-bottom: 30px;
 }
 .card-header{
-    @include font(500, 30, 24);
+    @media screen and(min-width: 1200px) {
+        @include font(500, 30, 24);
+    }
+    
     margin-bottom: 30px;
 }
 .card-description{
@@ -44,8 +48,8 @@
         max-height: 339px;
     }
     @media screen and(min-width: 1200px) {
-    max-width: 920px;
-    max-height: 440px;
+    max-width: 1060px;
+    max-height: 510px;
     margin-bottom: 100px;
     }
 }
