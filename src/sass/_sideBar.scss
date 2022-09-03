@@ -1,0 +1,68 @@
+.sideBar{
+    min-width: 250px;
+    max-width: 250px;
+    
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.sideBarCard{
+    margin-bottom: 50px;
+    &>h3{
+        margin: 20px 0;
+    }
+    &>p{
+        margin-bottom: 20px;
+    }
+}
+
+.sideBarList{
+ display: flex;
+}
+.sideBarItm>a>svg{
+    margin-left: 0;
+}
+.sideBarItm:not(:last-child){
+    margin-right: 10px;
+}
+.sideBarPost{
+    color: $secondary-color;
+    margin-bottom: 20px;
+}
+.sideBarPostList{
+    margin-bottom: 50px;
+    &>li:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.sideBarPostItm{
+    margin-bottom: 10px;
+    &::before{
+        content: " ";
+        margin-right: 10px;
+        margin-bottom: 2px;
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: $secondary-color;
+    }
+}
+.sideBarComent{
+    color: $secondary-color;
+    margin-left: 16px;
+    font-size: small;
+    &>span{
+        font-size: 18px;
+    }
+}
+.hideBtn{
+    display: flex;
+    margin: 20px  auto;
+    transition: color 350ms ease-in-out;
+    &:hover{
+        color: rgb(255, 0, 0);
+    }
+}
