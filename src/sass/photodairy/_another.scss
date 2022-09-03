@@ -1,0 +1,23 @@
+.section-bgn{
+    background-color: $secondary-bgColor;
+}
+.anotherText{
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 30px;
+}
+.anotherList{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    @media screen and (min-width: 1200px) {
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    }
+    
+}
+.anotherImage{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,76 @@
+.comments{
+    color: $secondary-color;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    &::before{
+        content: '2 ';
+        color: $secondary-color;
+        font-size: 22px;
+    }
+}
+.itemWrapper{
+    margin: 30px 0 50px;
+}
+.wrapperComent{
+    display: flex;
+    align-items: flex-start;
+    &>form {
+            width: 100%;
+        }
+}
+.avatar{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(22, 155, 117, 0.695);
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+.avatarName{
+    margin-bottom: 10px;
+    color: #373737;
+    
+}
+.commentBtn{
+    padding: 0;
+    margin-top: 20px;
+    color: $secondary-color;
+    transition: color 350ms ease-in-out;
+    &:hover{
+        color: $accent-color;
+    }
+}
+.commentInput{
+    height: 60px;
+    width: 100%;
+    border: 1px solid $secondary-bgColor;
+    border-radius: 4px;
+    padding: 20px;
+}
+.wrapperConected{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-left: auto;
+}
+.conectedText{
+    text-transform: uppercase;
+    color: $secondary-color;
+}
+.comentList{
+    display: flex;
+}
+.comentItem{
+    margin-left: 18px;
+    fill: $primary-color;
+    &:first-child{
+        fill: $secondary-bgColor;
+        margin-left: 30px;
+    }
+}

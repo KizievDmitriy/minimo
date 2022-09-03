@@ -1,0 +1,29 @@
+.img-list{
+    margin: 50px 0;
+}
+.img-item:not(:last-child) {
+    margin-bottom: 50px;
+}
+.quote{
+    padding: 0 30px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.social-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+    color: $secondary-color;
+}
+.social-list{
+    display: flex;
+}
+.social-svg{
+    margin-left: 18px;
+    fill: $secondary-color;
+    transition: fill 350ms ease-in-out;
+    &:hover{
+        fill: $accent-color;
+    }
+}
