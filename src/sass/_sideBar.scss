@@ -1,7 +1,13 @@
 .sideBar{
-    min-width: 250px;
-    max-width: 250px;
     display: none;
+    min-width: 180px;
+    max-width: 180px;
+    @media screen and (min-width: 768px) {
+        min-width: 250px;
+        max-width: 250px;
+    }
+    
+    
 }
 .showSideBar {
     display: block;
