@@ -1,7 +1,15 @@
 .card-img{
    object-fit: cover;
 }
+.card-label {
+    @media screen and (min-width: 768px) {
+        padding: 0 30px;
+    }
 
+    @media screen and (min-width: 1200px) {
+        padding: 0 80px;
+    }
+}
 .card-teg{
     font-family: $secondary-font;
     @include font(300, 14, 24);
